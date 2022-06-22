@@ -18,6 +18,7 @@ export const Tracks = () => {
             'Basic ' +
             new Buffer(clientId + ':' + clientSecret).toString('base64'),
         },
+        data: 'grant_type=client_credentials',
       })
     })
   })

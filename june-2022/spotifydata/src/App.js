@@ -1,6 +1,6 @@
 import logo from './logo.svg'
 import './App.css'
-import { Tracks } from './Tracks'
+// import { Tracks } from './Tracks'
 import { clientId } from './secrets'
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <header className='App-header'>
         <h1>Spotify React</h1>
         <a
-          href={`${AUTH_ENDPOINT}?client_id=${clientId}&redirect_uri=${REDIRECT_URI}`}
+          href={`${AUTH_ENDPOINT}?client_id=${clientId}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}
         >
           Login to Spotify
         </a>

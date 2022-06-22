@@ -14,7 +14,9 @@ export const Tracks = () => {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-xxx-form-urlencoded',
-          Authorization: 'Basic ' + (clientId + ':' + clientSecret),
+          Authorization:
+            'Basic ' +
+            new Buffer(clientId + ':' + clientSecret).toString('base64'),
         },
       })
     })

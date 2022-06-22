@@ -4,7 +4,8 @@ import { Tracks } from './Tracks'
 import { clientId } from './secrets'
 
 function App() {
-  const redirectUri
+  const REDIRECT_URI = 'http://localhost:3000'
+  const AUTH_ENDPOINT = 'http://accounts.spotify.com/authorize'
   return (
     <div className='App'>
       <header className='App-header'>

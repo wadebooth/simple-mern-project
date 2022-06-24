@@ -17,7 +17,7 @@ function App() {
         <a
           href={`${AUTH_ENDPOINT}?client_id=${clientId}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}`}
         >
-          Login to Spotify!
+          Login to Spotify here!
         </a>
       </header>
     </div>
